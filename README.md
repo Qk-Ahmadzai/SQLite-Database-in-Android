@@ -26,10 +26,9 @@ public class DBHelper extends SQLiteOpenHelper
  db.execSQL will create a table inside database ( Db_Unread.db ) which have five columns.
      
      
-public boolean insertSms (String number, String body, String status, String date) 
-{  db.insert(SMS_TABLE_NAME, null, contentValues);  }
-
-
+public boolean insertSms (String number, String body, String status, String date) { 
+   db.insert(SMS_TABLE_NAME, null, contentValues);  
+}
 
 Insert new data or record to table.
 
@@ -44,8 +43,9 @@ delete record from from table the function require id for record.
 
 
 public ArrayList<String> getAllSms() {
-SQLiteDatabase db = this.getReadableDatabase();
-Cursor res =  db.rawQuery( "select * from "+ SMS_TABLE_NAME , null );}
+   SQLiteDatabase db = this.getReadableDatabase();
+   Cursor res =  db.rawQuery( "select * from "+ SMS_TABLE_NAME , null );
+}
 
 
 
@@ -54,8 +54,9 @@ Method will return all data from the table.
 
 
 public ArrayList<String> getSentSms() {
-SQLiteDatabase db = this.getReadableDatabase();
-Cursor res =  db.rawQuery( "select * from "+ SMS_TABLE_NAME +" where sms_status = 0" , null );}
+   SQLiteDatabase db = this.getReadableDatabase();
+   Cursor res =  db.rawQuery( "select * from "+ SMS_TABLE_NAME +" where sms_status = 0" , null );
+}
 
 
 
@@ -63,24 +64,25 @@ Method will return record on the base of specific criteria which use WHERE Class
 
 
 
-  public ArrayList<String> getUnSentSms() {}
-  
-  
+  public ArrayList<String> getUnSentSms() {
+  }
   
   Return Unsent SMS.
-  
-  
-  public Cursor getSms(int id) {}
+
+  public Cursor getSms(int id) {
+  }
   
   
   only one record at a time  on the base of specific criteria which use WHERE (id) Class.
   
   
-   public int numberOfRows(){}
+public int numberOfRows(){
+}
+
 return number of record exist in table.
 
-
-   public boolean updateSms (Integer id, String number, String body, String status, String date) {}
+public boolean updateSms (Integer id, String number, String body, String status, String date) {
+}
    
    
 Updata a record.
