@@ -1,7 +1,7 @@
 # SQLite-Database-in-Android
 SQLite database helper class which predefined method, need a small change to use in your project or understand the concept of SQLite database in android.
 
-public class DBHelper extends SQLiteOpenHelper {
+public class DBHelper extends SQLiteOpenHelper 
 
    public static final String DATABASE_NAME = "Db_Unread.db";
     public static final String SMS_TABLE_NAME = "tb_sms";
