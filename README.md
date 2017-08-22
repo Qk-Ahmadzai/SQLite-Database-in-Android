@@ -1,7 +1,7 @@
 # SQLite-Database-in-Android
 SQLite database helper class which predefined method, need a small change to use in your project or understand the concept of SQLite database in android.
 
-'''java
+ ```java
 public class DBHelper extends SQLiteOpenHelper 
 
    public static final String DATABASE_NAME = "Db_Unread.db";
@@ -31,7 +31,7 @@ public boolean insertSms (String number, String body, String status, String date
    db.insert(SMS_TABLE_NAME, null, contentValues);  
 }
 
-'''
+```
 
 Insert new data or record to table.
 
