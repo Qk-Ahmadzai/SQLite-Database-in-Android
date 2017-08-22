@@ -44,28 +44,36 @@ public Integer deleteSms (Integer id) {}
 delete record from from table the function require id for record.
 
 
+```java
 
 public ArrayList<String> getAllSms() {
    SQLiteDatabase db = this.getReadableDatabase();
    Cursor res =  db.rawQuery( "select * from "+ SMS_TABLE_NAME , null );
 }
 
+```
 
 
 Method will return all data from the table.
 
 
 
+```java
+
 public ArrayList<String> getSentSms() {
    SQLiteDatabase db = this.getReadableDatabase();
    Cursor res =  db.rawQuery( "select * from "+ SMS_TABLE_NAME +" where sms_status = 0" , null );
 }
+
+```
 
 
 
 Method will return record on the base of specific criteria which use WHERE Class.
 
 
+
+```java
 
   public ArrayList<String> getUnSentSms() {
   }
@@ -74,19 +82,28 @@ Method will return record on the base of specific criteria which use WHERE Class
 
   public Cursor getSms(int id) {
   }
+ 
+ ```
   
   
   only one record at a time  on the base of specific criteria which use WHERE (id) Class.
   
-  
+
+```java
+
 public int numberOfRows(){
 }
 
+```
+
 return number of record exist in table.
+
+```java
 
 public boolean updateSms (Integer id, String number, String body, String status, String date) {
 }
-   
+
+```
    
 Updata a record.
 
