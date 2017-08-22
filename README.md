@@ -77,8 +77,12 @@ Method will return record on the base of specific criteria which use WHERE Class
 
   public ArrayList<String> getUnSentSms() {
   }
-  
+ 
+ ```
+ 
   Return Unsent SMS.
+
+```java
 
   public Cursor getSms(int id) {
   }
